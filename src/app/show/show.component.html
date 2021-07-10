@@ -1,0 +1,44 @@
+<div class="container py-5">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-10 col-lg-8">
+      <h1>Real Estate #show</h1>
+
+      <dl class="row border p-3 mt-5" *ngIf="myRealEstate">
+        <dt class="col-sm-3">Name: </dt>
+        <dd class="col-sm-9">{{myRealEstate.name}}</dd>
+
+        <dt class="col-sm-3">Real State Type: </dt>
+        <dd class="col-sm-9">{{myRealEstate.real_state_type}}</dd>
+
+        <dt class="col-sm-3">Street: </dt>
+        <dd class="col-sm-9">{{myRealEstate.street}}</dd>
+
+        <dt class="col-sm-3">External Number: </dt>
+        <dd class="col-sm-9">{{myRealEstate.external_number}}</dd>
+
+        <ng-template [ngIf]="myRealEstate.internal_number">
+          <dt class="col-sm-3">Internal Number: </dt>
+          <dd class="col-sm-9">{{myRealEstate.internal_number}}</dd>
+        </ng-template>
+
+        <dt class="col-sm-3">Neighborhood: </dt>
+        <dd class="col-sm-9">{{myRealEstate.neighborhood}}</dd>
+
+        <dt class="col-sm-3">City: </dt>
+        <dd class="col-sm-9">{{myRealEstate.city}}</dd>
+
+        <dt class="col-sm-3">country: </dt>
+        <dd class="col-sm-9">{{myRealEstate.country}}</dd>
+
+        <dt class="col-sm-3">Rooms: </dt>
+        <dd class="col-sm-9">{{myRealEstate.rooms}}</dd>
+
+        <dt class="col-sm-3">Bathrooms: </dt>
+        <dd class="col-sm-9">{{myRealEstate.bathrooms}}</dd>
+
+        <dt class="col-sm-3">comments: </dt>
+        <dd class="col-sm-9">{{myRealEstate?.comments}}</dd>
+      </dl>
+    </div>
+  </div>
+</div>
