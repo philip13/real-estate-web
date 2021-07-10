@@ -7,12 +7,14 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { ShowComponent } from './show/show.component';
+import { NewComponent } from './new/new.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    ShowComponent
+    ShowComponent,
+    NewComponent
   ],
   imports: [
     BrowserModule,
